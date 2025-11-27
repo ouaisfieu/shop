@@ -27,7 +27,6 @@
       --transition-med: 0.22s ease-out;
     }
 
-    /* Light mode (toggle avec .theme-light sur body) */
     body.theme-light {
       --bg: #f4f4f7;
       --bg-alt: #ffffff;
@@ -64,7 +63,6 @@
       }
     }
 
-    /* SIDEBAR façon Obsidian */
     .sidebar {
       background: linear-gradient(160deg, #020617 0, #020617 45%, #050816 100%);
       border-right: 1px solid var(--border-subtle);
@@ -307,7 +305,6 @@
       background: radial-gradient(circle at 30% 0, #0f172a, #020617 55%, #0f172a 100%);
     }
 
-    /* MAIN CONTENT */
     .main {
       flex: 1;
       padding: 18px 16px 20px;
@@ -358,7 +355,6 @@
       color: var(--accent-alt);
     }
 
-    /* search + filters */
     .filters-bar {
       display: flex;
       flex-wrap: wrap;
@@ -439,7 +435,6 @@
       background: #ffffff;
     }
 
-    /* Intro block */
     .intro-card {
       border-radius: var(--radius-xl);
       border: 1px solid rgba(148, 163, 184, 0.35);
@@ -521,7 +516,6 @@
       font-size: 12px;
     }
 
-    /* Product grid */
     .product-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -565,8 +559,40 @@
     .product-top-row {
       display: flex;
       justify-content: space-between;
-      gap: 6px;
+      gap: 8px;
       align-items: flex-start;
+    }
+
+    .product-head-left {
+      display: flex;
+      gap: 8px;
+      align-items: flex-start;
+      min-width: 0;
+    }
+
+    .product-thumb {
+      width: 42px;
+      height: 42px;
+      border-radius: 16px;
+      background: radial-gradient(circle at top, #1e293b 0, #020617 60%);
+      border: 1px solid rgba(148, 163, 184, 0.6);
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      color: #e5e7eb;
+      overflow: hidden;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .product-thumb.has-image {
+      color: transparent;
+      border-color: rgba(168, 85, 255, 0.8);
+      box-shadow:
+        0 0 14px rgba(168, 85, 255, 0.4),
+        0 0 24px rgba(34, 197, 94, 0.4);
     }
 
     .product-title {
@@ -588,8 +614,8 @@
       padding: 2px 8px;
       border-radius: 999px;
       border: 1px solid rgba(148, 163, 184, 0.6);
-      color: var(--text-soft);
       background: rgba(15, 23, 42, 0.9);
+      color: var(--text-soft);
       white-space: nowrap;
     }
 
@@ -710,11 +736,147 @@
     body.theme-light .empty-state {
       background: rgba(255, 255, 255, 0.8);
     }
+
+    .pagination-bar {
+      margin-top: 12px;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      align-items: center;
+      font-size: 12px;
+      color: var(--text-soft);
+    }
+
+    .page-btn {
+      padding: 4px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(148, 163, 184, 0.65);
+      background: rgba(15, 23, 42, 0.95);
+      color: var(--text-soft);
+      cursor: pointer;
+      font-size: 11px;
+    }
+
+    .page-btn:hover:not(:disabled) {
+      background: rgba(15, 23, 42, 1);
+    }
+
+    .page-btn:disabled {
+      opacity: 0.4;
+      cursor: default;
+    }
+
+    .modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(15, 23, 42, 0.85);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 40;
+      padding: 16px;
+    }
+
+    .modal-dialog {
+      width: 100%;
+      max-width: 900px;
+      max-height: 90vh;
+      background: var(--bg-card);
+      border-radius: 24px;
+      border: 1px solid var(--border-subtle);
+      box-shadow: 0 22px 60px rgba(0, 0, 0, 0.9);
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+
+    body.theme-light .modal-dialog {
+      background: #ffffff;
+      box-shadow: 0 22px 60px rgba(15, 23, 42, 0.4);
+    }
+
+    .modal-header {
+      padding: 14px 18px 10px;
+      border-bottom: 1px solid var(--border-subtle);
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .modal-header h2 {
+      margin: 0;
+      font-size: 16px;
+    }
+
+    .modal-meta {
+      font-size: 11px;
+      color: var(--text-softer);
+    }
+
+    .modal-body {
+      padding: 12px 18px 16px;
+      overflow: auto;
+      font-size: 13px;
+      color: var(--text-soft);
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 10px;
+      right: 14px;
+      border: none;
+      border-radius: 999px;
+      padding: 3px 8px;
+      background: rgba(15, 23, 42, 0.9);
+      color: var(--text-soft);
+      cursor: pointer;
+      font-size: 13px;
+    }
+
+    .modal-close:hover {
+      background: rgba(15, 23, 42, 1);
+    }
+
+    .modal-preview-frame {
+      border-radius: 18px;
+      border: 1px solid rgba(148, 163, 184, 0.5);
+      background: #020617;
+      overflow: hidden;
+      min-height: 160px;
+    }
+
+    .modal-preview-frame img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .modal-preview-frame iframe {
+      width: 100%;
+      height: 340px;
+      border: none;
+      background: #020617;
+    }
+
+    .modal-placeholder {
+      font-size: 12px;
+      color: var(--text-softer);
+    }
+
+    .modal-desc {
+      margin: 0;
+    }
+
+    .modal-tags .tag {
+      background: rgba(15, 23, 42, 0.9);
+    }
   </style>
 </head>
 <body class="theme-dark">
   <div class="app-shell">
-    <!-- SIDEBAR -->
     <aside class="sidebar">
       <div class="logo-block">
         <div class="logo-gem"></div>
@@ -722,7 +884,7 @@
           <div class="logo-title">ouaisfi.eu · Boutique</div>
           <div class="logo-sub">Fichiers, contenus & prestations</div>
         </div>
-        <div class="badge-beta">version 0.1</div>
+        <div class="badge-beta">version 0.2</div>
       </div>
 
       <div>
@@ -779,8 +941,7 @@
       <div class="sidebar-footer">
         <div>
           <strong>Mode d’emploi rapide</strong><br />
-          Ajoute ou modifie des offres dans le tableau <code>products[]</code> dans le
-          JavaScript. Rien d’autre.
+          Ajoute ou modifie des offres dans le fichier <code>products.json</code>.
         </div>
         <div class="theme-toggle" id="theme-toggle">
           <div class="theme-toggle-dot"></div>
@@ -789,7 +950,6 @@
       </div>
     </aside>
 
-    <!-- MAIN -->
     <main class="main">
       <header class="top-bar">
         <div>
@@ -875,43 +1035,44 @@
           Essaie avec moins de filtres ou un mot-clé plus large.
         </div>
       </section>
+
+      <section id="pagination-bar" class="pagination-bar" style="display:none;">
+        <button id="prev-page" class="page-btn">&larr; Page précédente</button>
+        <span id="page-info">Page 1 / 1</span>
+        <button id="next-page" class="page-btn">Page suivante &rarr;</button>
+      </section>
     </main>
   </div>
 
+  <!-- MODALE DE PRÉVISUALISATION -->
+  <div id="preview-modal" class="modal-backdrop" aria-hidden="true">
+    <div class="modal-dialog" role="dialog" aria-modal="true">
+      <button class="modal-close" id="modal-close-btn" aria-label="Fermer">✕</button>
+      <div class="modal-header">
+        <h2 id="modal-title"></h2>
+        <div id="modal-meta" class="modal-meta"></div>
+      </div>
+      <div id="modal-body" class="modal-body"></div>
+    </div>
+  </div>
+
   <script>
-    /*
-      ============================
-      CONFIG PRODUITS
-      ============================
-      Tu peux ajouter/supprimer/modifier des entrées dans le tableau products ci-dessous.
-
-      Champs utilisés :
-      - id           : identifiant interne (unique)
-      - title        : nom court de l’offre
-      - category     : "Fichier", "Contenu" ou "Prestation"
-      - type         : sous-type, affiche dans un badge (Pack, Atelier, Coaching...)
-      - price        : nombre en euros (0, 0.125, 1.25, 12.5, 125, 1250, 12500, etc.)
-      - priceBand    : "free" | "nano" | "micro" | "base" | "plus"
-      - description  : texte court
-      - tags         : tableau de mots-clés
-      - format       : ce qui est livré (PDF, .md, vidéo, mixte...)
-      - delivery     : "Téléchargement", "Visio", "Présentiel", etc.
-    */
-
     let products = [];
+    let currentFiltered = [];
+    let currentPage = 1;
+    const pageSize = 9;
 
-// Charger les produits depuis products.json
-fetch('products.json')
-  .then(response => response.json())
-  .then(data => {
-    products = data;
-    computeCounters();
-    applyFilters();
-  })
-  .catch(err => {
-    console.error('Erreur de chargement de products.json', err);
-  });
-
+    // Charger les produits depuis products.json
+    fetch('products.json')
+      .then(response => response.json())
+      .then(data => {
+        products = data;
+        computeCounters();
+        applyFilters();
+      })
+      .catch(err => {
+        console.error('Erreur de chargement de products.json', err);
+      });
 
     // DOM refs
     const productGrid = document.getElementById("product-grid");
@@ -922,13 +1083,22 @@ fetch('products.json')
     const priceChips = document.querySelectorAll("#price-chip-row .chip");
     const themeToggle = document.getElementById("theme-toggle");
 
-    // Counters
     const countAll = document.getElementById("count-all");
     const countFiles = document.getElementById("count-files");
     const countContent = document.getElementById("count-content");
     const countServices = document.getElementById("count-services");
 
-    // State
+    const paginationBar = document.getElementById("pagination-bar");
+    const prevPageBtn = document.getElementById("prev-page");
+    const nextPageBtn = document.getElementById("next-page");
+    const pageInfo = document.getElementById("page-info");
+
+    const modal = document.getElementById("preview-modal");
+    const modalCloseBtn = document.getElementById("modal-close-btn");
+    const modalTitle = document.getElementById("modal-title");
+    const modalMeta = document.getElementById("modal-meta");
+    const modalBody = document.getElementById("modal-body");
+
     let selectedCategory = "";
     let selectedPriceBand = "";
     let searchQuery = "";
@@ -990,21 +1160,48 @@ fetch('products.json')
             " " +
             p.type +
             " " +
-            p.tags.join(" ")
+            (p.tags || []).join(" ")
           ).toLowerCase();
           return haystack.includes(q);
         });
       }
 
-      if (sortMode === "price-asc") {
-        filtered.sort((a, b) => a.price - b.price);
-      } else if (sortMode === "price-desc") {
-        filtered.sort((a, b) => b.price - a.price);
-      } else if (sortMode === "alpha") {
-        filtered.sort((a, b) => a.title.localeCompare(b.title, "fr"));
+      currentFiltered = filtered;
+      currentPage = 1; // on revient au début à chaque changement de filtre
+      renderPage();
+    }
+
+    function renderPage() {
+      const total = currentFiltered.length;
+
+      if (!total) {
+        renderProducts([]);
+        updatePaginationControls(0);
+        return;
       }
 
-      renderProducts(filtered);
+      const totalPages = Math.max(1, Math.ceil(total / pageSize));
+      if (currentPage > totalPages) currentPage = totalPages;
+      if (currentPage < 1) currentPage = 1;
+
+      const start = (currentPage - 1) * pageSize;
+      const pageItems = currentFiltered.slice(start, start + pageSize);
+
+      renderProducts(pageItems);
+      updatePaginationControls(total);
+    }
+
+    function updatePaginationControls(total) {
+      if (total <= pageSize) {
+        paginationBar.style.display = "none";
+        return;
+      }
+
+      const totalPages = Math.max(1, Math.ceil(total / pageSize));
+      paginationBar.style.display = "flex";
+      pageInfo.textContent = `Page ${currentPage} / ${totalPages}`;
+      prevPageBtn.disabled = currentPage === 1;
+      nextPageBtn.disabled = currentPage === totalPages;
     }
 
     function renderProducts(list) {
@@ -1022,6 +1219,23 @@ fetch('products.json')
         const topRow = document.createElement("div");
         topRow.className = "product-top-row";
 
+        const headLeft = document.createElement("div");
+        headLeft.className = "product-head-left";
+
+        const thumb = document.createElement("div");
+        thumb.className = "product-thumb";
+
+        if (p.thumbnail) {
+          thumb.style.backgroundImage = `url(${p.thumbnail})`;
+          thumb.classList.add("has-image");
+        } else {
+          // fallback emoji par catégorie
+          if (p.category === "Fichier") thumb.textContent = "📁";
+          else if (p.category === "Contenu") thumb.textContent = "📝";
+          else if (p.category === "Prestation") thumb.textContent = "🧩";
+          else thumb.textContent = "✨";
+        }
+
         const titleBlock = document.createElement("div");
         const title = document.createElement("h3");
         title.className = "product-title";
@@ -1033,11 +1247,14 @@ fetch('products.json')
         titleBlock.appendChild(title);
         titleBlock.appendChild(cat);
 
+        headLeft.appendChild(thumb);
+        headLeft.appendChild(titleBlock);
+
         const typeBadge = document.createElement("div");
         typeBadge.className = "product-type-badge";
         typeBadge.textContent = p.type;
 
-        topRow.appendChild(titleBlock);
+        topRow.appendChild(headLeft);
         topRow.appendChild(typeBadge);
 
         const desc = document.createElement("p");
@@ -1058,7 +1275,7 @@ fetch('products.json')
           d.textContent = p.delivery;
           tagsRow.appendChild(d);
         }
-        p.tags.forEach((t) => {
+        (p.tags || []).forEach((t) => {
           const tag = document.createElement("span");
           tag.className = "tag";
           tag.textContent = t;
@@ -1107,19 +1324,13 @@ fetch('products.json')
           window.location.href = `mailto:?subject=${subject}&body=${body}`;
         });
 
-        const btnGhost = document.createElement("button");
-        btnGhost.className = "btn btn-ghost";
-        btnGhost.textContent = "Détails";
-        btnGhost.addEventListener("click", () => {
-          alert(
-            `${p.title}\n\n${p.description}\n\nPrix : ${formatPrice(p.price)}\nFormat : ${
-              p.format || "—"
-            }\nLivraison : ${p.delivery || "—"}`
-          );
-        });
+        const btnPreview = document.createElement("button");
+        btnPreview.className = "btn btn-ghost";
+        btnPreview.textContent = "Prévisualiser";
+        btnPreview.addEventListener("click", () => openModal(p));
 
         actions.appendChild(btnPrimary);
-        actions.appendChild(btnGhost);
+        actions.appendChild(btnPreview);
 
         card.appendChild(topRow);
         card.appendChild(desc);
@@ -1130,6 +1341,74 @@ fetch('products.json')
         productGrid.appendChild(card);
       });
     }
+
+    // Modale
+    function openModal(p) {
+      modalTitle.textContent = p.title;
+      modalMeta.textContent = [
+        p.category || "—",
+        p.type || "—",
+        formatPrice(p.price),
+        p.format || "—",
+        p.delivery || "—"
+      ].join(" • ");
+
+      let html = "";
+
+      if (p.previewType && p.previewUrl) {
+        if (p.previewType === "image") {
+          html += `
+            <div class="modal-preview-frame">
+              <img src="${p.previewUrl}" alt="${p.title}" />
+            </div>
+          `;
+        } else if (p.previewType === "pdf" || p.previewType === "html") {
+          html += `
+            <div class="modal-preview-frame">
+              <iframe src="${p.previewUrl}" title="${p.title}" loading="lazy"></iframe>
+            </div>
+          `;
+        }
+      } else {
+        html += `
+          <p class="modal-placeholder">
+            Ajoute <code>"previewType"</code> et <code>"previewUrl"</code> dans <code>products.json</code>
+            pour activer une vraie prévisualisation de ce contenu.
+          </p>
+        `;
+      }
+
+      html += `<p class="modal-desc">${p.description || ""}</p>`;
+
+      if (p.tags && p.tags.length) {
+        html += `<div class="tags-row modal-tags">`;
+        p.tags.forEach((t) => {
+          html += `<span class="tag">${t}</span>`;
+        });
+        html += `</div>`;
+      }
+
+      modalBody.innerHTML = html;
+      modal.style.display = "flex";
+      document.body.style.overflow = "hidden";
+    }
+
+    function closeModal() {
+      modal.style.display = "none";
+      document.body.style.overflow = "";
+    }
+
+    modalCloseBtn.addEventListener("click", closeModal);
+    modal.addEventListener("click", (e) => {
+      if (e.target === modal) {
+        closeModal();
+      }
+    });
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") {
+        closeModal();
+      }
+    });
 
     // Events
     navItems.forEach((item) => {
@@ -1157,15 +1436,37 @@ fetch('products.json')
 
     sortSelect.addEventListener("change", (e) => {
       sortMode = e.target.value;
-      applyFilters();
+      // tri appliqué sur currentFiltered
+      if (sortMode === "price-asc") {
+        currentFiltered.sort((a, b) => a.price - b.price);
+      } else if (sortMode === "price-desc") {
+        currentFiltered.sort((a, b) => b.price - a.price);
+      } else if (sortMode === "alpha") {
+        currentFiltered.sort((a, b) => a.title.localeCompare(b.title, "fr"));
+      }
+      currentPage = 1;
+      renderPage();
     });
 
-    // Theme toggle
+    prevPageBtn.addEventListener("click", () => {
+      if (currentPage > 1) {
+        currentPage--;
+        renderPage();
+      }
+    });
+
+    nextPageBtn.addEventListener("click", () => {
+      const total = currentFiltered.length;
+      const totalPages = Math.max(1, Math.ceil(total / pageSize));
+      if (currentPage < totalPages) {
+        currentPage++;
+        renderPage();
+      }
+    });
+
     themeToggle.addEventListener("click", () => {
       document.body.classList.toggle("theme-light");
     });
-
-
   </script>
 </body>
 </html>
