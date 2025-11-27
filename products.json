@@ -1,0 +1,110 @@
+[
+  {
+    "id": "md-starter-pack",
+    "title": "Pack starter Markdown (fichiers + modèles)",
+    "category": "Fichier",
+    "type": "Pack .md",
+    "price": 12.5,
+    "priceBand": "base",
+    "description": "Modèles de notes, fiches de veille, fiches pédagogiques prêtes à adapter à ton propre projet.",
+    "tags": ["markdown", "gabarits", "veille", "éducation permanente"],
+    "format": ".md + .pdf",
+    "delivery": "Téléchargement"
+  },
+  {
+    "id": "micro-report",
+    "title": "Micro-dossier thématique (4–6 pages)",
+    "category": "Contenu",
+    "type": "Micro-contenu",
+    "price": 1.25,
+    "priceBand": "micro",
+    "description": "Une synthèse courte sur un enjeu de société, en mode accessible, avec pistes de discussion.",
+    "tags": ["plaidoyer", "synthèse", "pédagogie"],
+    "format": "PDF",
+    "delivery": "Téléchargement"
+  },
+  {
+    "id": "nano-tip",
+    "title": "Nano-astuce : 1 outil libre expliqué",
+    "category": "Contenu",
+    "type": "Nano-tip",
+    "price": 0.125,
+    "priceBand": "nano",
+    "description": "Une fiche ultra concise pour découvrir un logiciel libre ou un service web utile.",
+    "tags": ["libre", "outil", "fiche express"],
+    "format": "Image + texte",
+    "delivery": "Téléchargement"
+  },
+  {
+    "id": "free-sampler",
+    "title": "Échantillon gratuit de la boîte à outils",
+    "category": "Fichier",
+    "type": "Gratuit",
+    "price": 0,
+    "priceBand": "free",
+    "description": "Un mini pack de fichiers, extraits de dossiers, exemples de gabarits pour voir le style.",
+    "tags": ["gratuit", "extraits", "découverte"],
+    "format": ".md + .pdf + liens",
+    "delivery": "Téléchargement"
+  },
+  {
+    "id": "online-workshop-125",
+    "title": "Atelier en ligne (2h) : cartes, veille & fun",
+    "category": "Prestation",
+    "type": "Atelier en ligne",
+    "price": 125,
+    "priceBand": "plus",
+    "description": "Atelier participatif pour une équipe ou une petite asso, avec outils concrets et support partagé.",
+    "tags": ["atelier", "équipe", "visioconférence"],
+    "format": "Visio + support PDF",
+    "delivery": "Visio"
+  },
+  {
+    "id": "coaching-sprint",
+    "title": "Coaching sprint (3 séances)",
+    "category": "Prestation",
+    "type": "Accompagnement",
+    "price": 1250,
+    "priceBand": "plus",
+    "description": "Accompagnement court pour structurer ton projet, ton site et ton écosystème de contenus.",
+    "tags": ["coaching", "projet", "architecture de contenu"],
+    "format": "Visio",
+    "delivery": "Visio"
+  },
+  {
+    "id": "full-mission",
+    "title": "Mission complète « laboratoire citoyen »",
+    "category": "Prestation",
+    "type": "Mission premium",
+    "price": 12500,
+    "priceBand": "plus",
+    "description": "Conception et mise en route d’un dispositif complet (veille, contenus, animation) avec ton équipe.",
+    "tags": ["mission", "long terme", "stratégie"],
+    "format": "Mixte",
+    "delivery": "Présentiel + en ligne"
+  },
+  {
+    "id": "bundle-tarot-boulot",
+    "title": "Bundle Tarot / Tarot de Boulot",
+    "category": "Fichier",
+    "type": "Jeu & ressources",
+    "price": 12.5,
+    "priceBand": "base",
+    "description": "Les fichiers + livrets pour expérimenter le tarot et le tarot de boulot dans un cadre pédagogique.",
+    "tags": ["tarot", "jeu", "pédagogie"],
+    "format": ".pdf + .md + images",
+    "delivery": "Téléchargement"
+  },
+  {
+    "id": "content-license-pack",
+    "title": "Pack licence & documentation d’usage",
+    "category": "Contenu",
+    "type": "Doc & modèles",
+    "price": 12.5,
+    "priceBand": "base",
+    "description": "Textes types, mentions et guides pour comprendre comment utiliser et adapter les contenus.",
+    "tags": ["licence", "documentation", "non marchand"],
+    "format": ".md + .pdf",
+    "delivery": "Téléchargement"
+  }
+]
