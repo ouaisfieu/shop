@@ -9,7 +9,10 @@
     "description": "Modèles de notes, fiches de veille, fiches pédagogiques prêtes à adapter à ton propre projet.",
     "tags": ["markdown", "gabarits", "veille", "éducation permanente"],
     "format": ".md + .pdf",
-    "delivery": "Téléchargement"
+    "delivery": "Téléchargement",
+    "thumbnail": "thumbs/md-starter-pack.png",
+    "previewType": "pdf",
+    "previewUrl": "previews/md-starter-pack.pdf"
   },
   {
     "id": "micro-report",
@@ -21,7 +24,10 @@
     "description": "Une synthèse courte sur un enjeu de société, en mode accessible, avec pistes de discussion.",
     "tags": ["plaidoyer", "synthèse", "pédagogie"],
     "format": "PDF",
-    "delivery": "Téléchargement"
+    "delivery": "Téléchargement",
+    "thumbnail": "thumbs/micro-report.png",
+    "previewType": "pdf",
+    "previewUrl": "previews/micro-report.pdf"
   },
   {
     "id": "nano-tip",
@@ -33,7 +39,10 @@
     "description": "Une fiche ultra concise pour découvrir un logiciel libre ou un service web utile.",
     "tags": ["libre", "outil", "fiche express"],
     "format": "Image + texte",
-    "delivery": "Téléchargement"
+    "delivery": "Téléchargement",
+    "thumbnail": "thumbs/nano-tip.png",
+    "previewType": "image",
+    "previewUrl": "previews/nano-tip.png"
   },
   {
     "id": "free-sampler",
@@ -45,7 +54,10 @@
     "description": "Un mini pack de fichiers, extraits de dossiers, exemples de gabarits pour voir le style.",
     "tags": ["gratuit", "extraits", "découverte"],
     "format": ".md + .pdf + liens",
-    "delivery": "Téléchargement"
+    "delivery": "Téléchargement",
+    "thumbnail": "thumbs/free-sampler.png",
+    "previewType": "pdf",
+    "previewUrl": "previews/free-sampler.pdf"
   },
   {
     "id": "online-workshop-125",
@@ -57,7 +69,10 @@
     "description": "Atelier participatif pour une équipe ou une petite asso, avec outils concrets et support partagé.",
     "tags": ["atelier", "équipe", "visioconférence"],
     "format": "Visio + support PDF",
-    "delivery": "Visio"
+    "delivery": "Visio",
+    "thumbnail": "thumbs/online-workshop.png",
+    "previewType": "pdf",
+    "previewUrl": "previews/online-workshop.pdf"
   },
   {
     "id": "coaching-sprint",
@@ -69,7 +84,10 @@
     "description": "Accompagnement court pour structurer ton projet, ton site et ton écosystème de contenus.",
     "tags": ["coaching", "projet", "architecture de contenu"],
     "format": "Visio",
-    "delivery": "Visio"
+    "delivery": "Visio",
+    "thumbnail": "thumbs/coaching-sprint.png",
+    "previewType": "html",
+    "previewUrl": "previews/coaching-sprint.html"
   },
   {
     "id": "full-mission",
@@ -81,7 +99,10 @@
     "description": "Conception et mise en route d’un dispositif complet (veille, contenus, animation) avec ton équipe.",
     "tags": ["mission", "long terme", "stratégie"],
     "format": "Mixte",
-    "delivery": "Présentiel + en ligne"
+    "delivery": "Présentiel + en ligne",
+    "thumbnail": "thumbs/full-mission.png",
+    "previewType": "html",
+    "previewUrl": "previews/full-mission.html"
   },
   {
     "id": "bundle-tarot-boulot",
@@ -93,7 +114,10 @@
     "description": "Les fichiers + livrets pour expérimenter le tarot et le tarot de boulot dans un cadre pédagogique.",
     "tags": ["tarot", "jeu", "pédagogie"],
     "format": ".pdf + .md + images",
-    "delivery": "Téléchargement"
+    "delivery": "Téléchargement",
+    "thumbnail": "thumbs/bundle-tarot-boulot.png",
+    "previewType": "pdf",
+    "previewUrl": "previews/bundle-tarot-boulot.pdf"
   },
   {
     "id": "content-license-pack",
@@ -105,6 +129,235 @@
     "description": "Textes types, mentions et guides pour comprendre comment utiliser et adapter les contenus.",
     "tags": ["licence", "documentation", "non marchand"],
     "format": ".md + .pdf",
-    "delivery": "Téléchargement"
+    "delivery": "Téléchargement",
+    "thumbnail": "thumbs/content-license-pack.png",
+    "previewType": "pdf",
+    "previewUrl": "previews/content-license-pack.pdf"
+  },
+
+  {
+    "id": "obsidian-theme-pack",
+    "title": "Pack thèmes & snippets Obsidian-like",
+    "category": "Fichier",
+    "type": "Pack CSS/JS",
+    "price": 12.5,
+    "priceBand": "base",
+    "description": "Snippets CSS/JS pour donner un look Obsidian à tes sites statiques et prototypes.",
+    "tags": ["obsidian", "css", "snippets"],
+    "format": ".css + .md",
+    "delivery": "Téléchargement",
+    "thumbnail": "thumbs/obsidian-theme-pack.png",
+    "previewType": "image",
+    "previewUrl": "previews/obsidian-theme-pack.png"
+  },
+  {
+    "id": "watch-setup-guide",
+    "title": "Guide d’installation de la veille citoyenne",
+    "category": "Contenu",
+    "type": "Guide pas-à-pas",
+    "price": 12.5,
+    "priceBand": "base",
+    "description": "Un guide complet pour mettre en place une petite cellule de veille citoyenne dans une asso.",
+    "tags": ["veille", "guide", "asso"],
+    "format": "PDF",
+    "delivery": "Téléchargement",
+    "thumbnail": "thumbs/watch-setup-guide.png",
+    "previewType": "pdf",
+    "previewUrl": "previews/watch-setup-guide.pdf"
+  },
+  {
+    "id": "atelier-init-html",
+    "title": "Atelier initiation sites statiques (2h)",
+    "category": "Prestation",
+    "type": "Atelier en ligne",
+    "price": 125,
+    "priceBand": "plus",
+    "description": "Atelier pour comprendre concrètement comment fabriquer un petit site statique sans s’arracher les cheveux.",
+    "tags": ["html", "débutant", "atelier"],
+    "format": "Visio + démo live",
+    "delivery": "Visio",
+    "thumbnail": "thumbs/atelier-init-html.png",
+    "previewType": "html",
+    "previewUrl": "previews/atelier-init-html.html"
+  },
+  {
+    "id": "kit-jeu-12-50",
+    "title": "Kit jeu concours «12,50»",
+    "category": "Fichier",
+    "type": "Kit jeu",
+    "price": 12.5,
+    "priceBand": "base",
+    "description": "Tous les fichiers nécessaires pour organiser une version locale du jeu concours «12,50».",
+    "tags": ["jeu concours", "12,50", "kit"],
+    "format": ".html + .md + images",
+    "delivery": "Téléchargement",
+    "thumbnail": "thumbs/kit-jeu-12-50.png",
+    "previewType": "html",
+    "previewUrl": "previews/kit-jeu-12-50.html"
+  },
+  {
+    "id": "template-rapport-fwb",
+    "title": "Template rapport d’activité FWB",
+    "category": "Fichier",
+    "type": "Template",
+    "price": 12.5,
+    "priceBand": "base",
+    "description": "Gabarits de rapport d’activité adaptés au décret éducation permanente, prêts à adapter.",
+    "tags": ["rapport", "fwb", "gabarit"],
+    "format": ".odt + .md + .pdf",
+    "delivery": "Téléchargement",
+    "thumbnail": "thumbs/template-rapport-fwb.png",
+    "previewType": "pdf",
+    "previewUrl": "previews/template-rapport-fwb.pdf"
+  },
+  {
+    "id": "fiche-logiciel-libre-pack",
+    "title": "Pack 10 fiches logiciels libres",
+    "category": "Contenu",
+    "type": "Pack fiches",
+    "price": 12.5,
+    "priceBand": "base",
+    "description": "10 fiches prêtes à utiliser sur des logiciels libres incontournables pour associations.",
+    "tags": ["logiciels libres", "asso", "fiche"],
+    "format": "PDF + images",
+    "delivery": "Téléchargement",
+    "thumbnail": "thumbs/fiche-logiciel-libre-pack.png",
+    "previewType": "pdf",
+    "previewUrl": "previews/fiche-logiciel-libre-pack.pdf"
+  },
+  {
+    "id": "atelier-plaidoyer-citoyen",
+    "title": "Atelier plaidoyer citoyen (3h)",
+    "category": "Prestation",
+    "type": "Atelier en ligne ou présentiel",
+    "price": 250,
+    "priceBand": "plus",
+    "description": "Atelier intensif pour comprendre, cartographier et structurer un plaidoyer citoyen réaliste.",
+    "tags": ["plaidoyer", "atelier", "cartographie"],
+    "format": "Visio / présentiel + support",
+    "delivery": "Mixte",
+    "thumbnail": "thumbs/atelier-plaidoyer.png",
+    "previewType": "pdf",
+    "previewUrl": "previews/atelier-plaidoyer.pdf"
+  },
+  {
+    "id": "pack-exemples-hugo",
+    "title": "Pack d’exemples Hugo + FixIt",
+    "category": "Fichier",
+    "type": "Pack site",
+    "price": 12.5,
+    "priceBand": "base",
+    "description": "Un mini site Hugo avec le thème FixIt, prêt à cloner et modifier.",
+    "tags": ["hugo", "fixit", "exemple"],
+    "format": ".zip (site complet)",
+    "delivery": "Téléchargement",
+    "thumbnail": "thumbs/pack-exemples-hugo.png",
+    "previewType": "image",
+    "previewUrl": "previews/pack-exemples-hugo.png"
+  },
+  {
+    "id": "audit-site-simple",
+    "title": "Audit rapide de site (1h)",
+    "category": "Prestation",
+    "type": "Audit express",
+    "price": 125,
+    "priceBand": "plus",
+    "description": "Une session d’une heure pour analyser un site, proposer des priorités simples et actionnables.",
+    "tags": ["audit", "site web", "priorités"],
+    "format": "Visio",
+    "delivery": "Visio",
+    "thumbnail": "thumbs/audit-site-simple.png",
+    "previewType": "html",
+    "previewUrl": "previews/audit-site-simple.html"
+  },
+  {
+    "id": "storyworld-pack",
+    "title": "Storyworld : univers partagé 2042",
+    "category": "Contenu",
+    "type": "Univers narratif",
+    "price": 12.5,
+    "priceBand": "base",
+    "description": "Un univers narratif de base (2042, Bruxelles, réseaux citoyens) à réutiliser dans tes propres jeux/histoires.",
+    "tags": ["fiction", "2042", "storyworld"],
+    "format": ".md + .pdf",
+    "delivery": "Téléchargement",
+    "thumbnail": "thumbs/storyworld-pack.png",
+    "previewType": "pdf",
+    "previewUrl": "previews/storyworld-pack.pdf"
+  },
+  {
+    "id": "atelier-tarot-boulot",
+    "title": "Atelier Tarot de Boulot (demi-journée)",
+    "category": "Prestation",
+    "type": "Atelier expérimental",
+    "price": 350,
+    "priceBand": "plus",
+    "description": "Exploration ludique des cartes du Tarot de Boulot pour parler travail, trajectoires et envies.",
+    "tags": ["tarot de boulot", "atelier", "travail"],
+    "format": "Présentiel / visio",
+    "delivery": "Mixte",
+    "thumbnail": "thumbs/atelier-tarot-boulot.png",
+    "previewType": "image",
+    "previewUrl": "previews/atelier-tarot-boulot.png"
+  },
+  {
+    "id": "coffre-fort-ressources",
+    "title": "Coffre-fort de ressources (abonnement expérimental)",
+    "category": "Contenu",
+    "type": "Abonnement beta",
+    "price": 12.5,
+    "priceBand": "base",
+    "description": "Accès à un dossier partagé mis à jour régulièrement avec ressources, gabarits et idées.",
+    "tags": ["abonnement", "ressources", "beta"],
+    "format": "Dossier en ligne",
+    "delivery": "Lien privé",
+    "thumbnail": "thumbs/coffre-fort-ressources.png",
+    "previewType": "html",
+    "previewUrl": "previews/coffre-fort-ressources.html"
+  },
+  {
+    "id": "session-ideation",
+    "title": "Session d’idéation (2h)",
+    "category": "Prestation",
+    "type": "Co-création",
+    "price": 250,
+    "priceBand": "plus",
+    "description": "Session de travail pour clarifier une idée, un projet ou un dispositif et repartir avec un plan simple.",
+    "tags": ["idéation", "co-création", "plan"],
+    "format": "Visio",
+    "delivery": "Visio",
+    "thumbnail": "thumbs/session-ideation.png",
+    "previewType": "html",
+    "previewUrl": "previews/session-ideation.html"
+  },
+  {
+    "id": "fiche-personnage-joueur",
+    "title": "Fiche personnage joueur/joueuse",
+    "category": "Fichier",
+    "type": "Formulaire",
+    "price": 1.25,
+    "priceBand": "micro",
+    "description": "Fiche de personnage pour les jeux, tests et parcours imaginaires reliés au projet.",
+    "tags": ["jeu", "fiche personnage", "parcours"],
+    "format": ".pdf + .md",
+    "delivery": "Téléchargement",
+    "thumbnail": "thumbs/fiche-personnage-joueur.png",
+    "previewType": "pdf",
+    "previewUrl": "previews/fiche-personnage-joueur.pdf"
+  },
+  {
+    "id": "guide-sante-info",
+    "title": "Guide santé mentale & info",
+    "category": "Contenu",
+    "type": "Guide sensible",
+    "price": 12.5,
+    "priceBand": "base",
+    "description": "Un guide pour manier la veille, l’info et les flux sans exploser mentalement.",
+    "tags": ["santé mentale", "info", "guide"],
+    "format": "PDF",
+    "delivery": "Téléchargement",
+    "thumbnail": "thumbs/guide-sante-info.png",
+    "previewType": "pdf",
+    "previewUrl": "previews/guide-sante-info.pdf"
   }
 ]
