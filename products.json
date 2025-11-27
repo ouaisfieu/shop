@@ -10,9 +10,9 @@
     "tags": ["markdown", "gabarits", "veille", "éducation permanente"],
     "format": ".md + .pdf",
     "delivery": "Téléchargement",
-    "thumbnail": "thumbs/md-starter-pack.png",
+    "thumbnail": "https://dl.ouaisfi.eu/gifs/lapin.gif",
     "previewType": "pdf",
-    "previewUrl": "previews/md-starter-pack.pdf"
+    "previewUrl": "https://dl.ouaisfi.eu/pdfs/berurier-noir.pdf"
   },
   {
     "id": "micro-report",
